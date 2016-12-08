@@ -28,11 +28,6 @@ var updateTotal = function(amount) {
   expTotal.textContent = total;
 }
 
-btn.addEventListener('click', handleClick);
-var input = document.querySelectorAll('input')[0];
-var input2 = document.querySelectorAll('input')[1];
-
-
 var renderRow = function(name, amount) {
   var tr = document.createElement('tr');
   var td = document.createElement('td');
@@ -58,7 +53,6 @@ var clearInputs = function(){
   expName.value = '';
 }
 
-var row = renderRow('coffee', '2.00');
-tbody.appendChild(row);
-row = renderRow('muffin','2.00');
-tbody.appendChild(row);
+btn.addEventListener('click', handleClick);
+var input = document.querySelectorAll('input')[0];
+var input2 = document.querySelectorAll('input')[1];
